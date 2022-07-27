@@ -1,0 +1,10 @@
+version: "3.9"
+   
+services:
+  demoServer:
+    image: demo_task:v1
+    ports:
+     - "8080:5000"
+    environment:
+      - API_KEY=${API_KEY}
+      - API_SECRET=${API_SECRET}
